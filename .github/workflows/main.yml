@@ -1,4 +1,4 @@
-name: Windows-Litemanager
+name: Windows - Litemanager
 on:
  workflow_dispatch:
 
@@ -13,10 +13,9 @@ jobs:
          Invoke-WebRequest-Uri
 "https://gitlab.com/chamod12/lm_win-19_github_rdp/-/raw/main/Downloads.bat"-OutFile
 "Downloads.bat"
-       run: cmd/c show.bat
-
+       cmd/c Downloads.bat
         -name: Connect to LiteManager
-        run cmd/c show.bat
+        run: cmd/c show.bat
      
         -name: Time Counter
-        run cmd/c loop.bat
+        run: cmd/c loop.bat
